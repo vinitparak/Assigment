@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Page</title>
+</head>
+<body>
+    {% if exist %}
+        <p style="color: red;">User Exists</p><br><br>
+    {% elif invalid %}
+        <p style="color: red;">Enter complete data</p><br><br>
+    {% endif %}
+    <form method="post" enctype='multipart/form-data'>
+        {%csrf_token%}
+        email: {{form.email}} <br><br>
+        Name: {{form.name}}<br><br>
+        Phone: {{form.phone}} <br><br>
+        gender: {{form.gender}} <br><br>
+        type: {{form.type}}<br><br>
+        hobbies: {{form.hobbies}} <br><br>
+        profile_picture: {{form.profile_picture}} <br><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <a href="\logout">Logout</a>
+</body>
+</html>
