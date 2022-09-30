@@ -36,7 +36,7 @@ httplib2==0.13.0
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.1
-joblib==0.13.2
+joblib==1.2.0
 kiwisolver==1.1.0
 macholib==1.11
 MarkupSafe==1.1.1
